@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Selection Sort Visualizer</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="selectionsort.html" class="navbar-logo">Selection Sort Visualizer</a>
+        </div>
+    </nav>
+    <div id="container"></div>
+
+    <hr>
+
+    <div>
+        <input type="number" id="input-n" placeholder="Enter the number of elements (n)">
+        <button onClick="init()" class="custom-button">Init</button>
+        <button onClick="play()" class="custom-button playing">Play</button>
+        <input type="range" id="speed-slider" min="1" max="10" value="5" step="1"   onChange="updateSpeed()">
+        <label for="speed-slider">Speed:</label>
+    </div>
+    <p id="error-message" style="display: none;"></p>
+    <script src="selectionsort.js"></script>
+</body>
+
+</html>
